@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <script>
+        
+    var bannerstatus=1;
+        var bannertimer=2000;
+        window.onload=function(){
+            bannerloop();
+        }
+        var startbannerloop =setInterval(function(){
+            bannerloop();
+
+        }, bannertimer);
+        function bannerloop(){
+            if (bannerstatus===1){
+                document.getElementById("imgban2").style.opacity="0";
+                setTimeout(function(){
+                    document.getElementById("imgban1").style.right="0px";
+                    document.getElementById("imgban1").style.zIndex="1500";
+                    document.getElementById("imgban2").style.right="-1200px";
+                    document.getElementById("imgban2").style.zIndex="1000";
+                    document.getElementById("imgban3").style.right="1200px";
+                    document.getElementById("imgban3").style.zIndex="500";
+                },300);
+                setTimeout(function(){
+                document.getElementById("imgban2").style.opacity="1";
+                },800);
+                bannerstatus=2;
+            }
+            else if (bannerstatus===2){
+                document.getElementById("imgban3").style.opacity="0";
+                setTimeout(function(){
+                    document.getElementById("imgban2").style.right="0px";
+                    document.getElementById("imgban2").style.zIndex="1500";
+                    document.getElementById("imgban3").style.right="-1200px";
+                    document.getElementById("imgban3").style.zIndex="1000";
+                    document.getElementById("imgban1").style.right="1200px";
+                    document.getElementById("imgban1").style.zIndex="500";
+                },300);
+                setTimeout(function(){
+                document.getElementById("imgban3").style.opacity="1";
+                },800);
+                bannerstatus=3;
+            }
+            else if (bannerstatus===3){
+                document.getElementById("imgban1").style.opacity="0";
+                setTimeout(function(){
+                    document.getElementById("imgban3").style.right="0px";
+                    document.getElementById("imgban3").style.zIndex="1500";
+                    document.getElementById("imgban1").style.right="-1200px";
+                    document.getElementById("imgban1").style.zIndex="1000";
+                    document.getElementById("imgban2").style.right="1200px";
+                    document.getElementById("imgban2").style.zIndex="500";
+                },500);
+                setTimeout(function(){
+                document.getElementById("imgban1").style.opacity="1";
+                },1000);
+                bannerstatus=1;
+            }
+        }
+        </script>
+    
+    </head>
+<body>
+    <section>
+        <div class="header">
+            <h1>YL Imaging Solution</h1>
+            <p></p>
+          </div>
+          <div id="navbar">
+            <a class="active" href="index.html">Home</a>
+            <a href="product.html">Product</a>
+            <a href="about us.html">About Us</a>
+            <a href="spare part.html">Spare Part</a>
+          </div>
+          <div class="main" id="main">
+            <div class="imgban" id="imgban3">
+    
+            </div>
+            <div class="imgban" id="imgban2">
+            
+            </div>
+            <div class="imgban" id="imgban1">
+            
+            </div>
+          </div>
+          <main>
+            <div id="body"> 
+            <div class="row">
+                <div class="card">
+                    <div class="column">
+    
+                <h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;margin:25px; text-align:center; color:rgb(192, 8, 8)">Our products </h1><hr>
+            <img style="width:300px; height:250px;padding-left:65px;padding-right:50px; margin-top:20px"src="machine product.jpeg">
+                
+            <a href="product.html"><button type="button">Find out More</button></a>       
+            </div>
+                </div>
+            </div>
+            <div id="body">
+            <div class="row">
+                <div class="card">
+                    <div class="column">
+    
+                <h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;margin:auto; margin:25px; text-align:center; color:rgb(192, 8, 8)">Spare Part For Sale </h1><hr>
+            <img style="width:300px; height:200px;float:left; padding-left:65px;padding-right:65px; margin-top:20px"src="drum.jpg">
+                <p>
+                   
+                </p>
+            <a href="spare part.html"><button type="button">Find out More</button></a>        
+            </div>
+                </div>
+            </div>
+            <div id="body">
+            <div class="row">
+                <div class="card">
+                    <div class="column">
+    
+                <h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;margin:auto; margin:25px; text-align:center; color:rgb(192, 8, 8)">About Us </h1><hr>
+            <img style="width:300px; height:200px;float:left; padding-left:65px;padding-right:65px; margin-top:20px"src="aboutus.jpeg">
+                <p>
+                    
+                </p>
+            <a href="about us.html"><button type="button">Find out More</button></a>       
+            </div>
+                </div>
+            </div>
+            <div id="body">
+            <div class="row">
+                <div class="card">
+                    <div class="column">
+    
+                        
+            </div>
+                </div>
+            </div>
+        </body>
+          </main>
+          <div class="float">
+            <img src="WhatsApp.png" height="50px">
+            <h3>Our WhatsApp:</h3>
+            <p>+6012-4085304</p>
+        </div>
+
+        <div class="float">
+            <img src="telephone.png" height="50px">
+            <h3>Customer Service:</h3>
+            <p>04-6445689</p>
+        </div>
+        <div class="float">
+        <img src="email.jpeg" height="50px">
+        <h3>Our Email:</h3>
+        <p>ylimagingsolution@gmail.com</p>
+        </div>
+        <br>
+            
+
+    </div>     
+        </section>
+        </html>
+    
